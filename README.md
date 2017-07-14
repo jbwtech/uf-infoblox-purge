@@ -17,40 +17,33 @@ This program depends on the Infoblox AP perl module, which can be downloaded fro
 Use the yum package manager to install perl and perll-CPAN and the necessary dependencies.
 
 ```
-$ sudo yum install perl perl-CPAN
+$ sudo yum install perl openssl openssl-devel perl-CPAN perl-XML-Parser perl-Crypt-SSLeay perl-LWP-Protocol-https perl-ExtUtils-CBuilder
 ```
+
 
 Next, open a perl shell with the CPAN module loaded.
 
 ```
 $ perl -e shell -MCPAN
 ```
-
-In addition to the perl modules listed below, install the following using CPAN:
-
+or
 ```
-perl> install ExtUtils::CBuilder
+$ cpan
 ```
 
->
+
 For IPv4 connections the following are required
 
 - Perl 5.8.8 or later
-
 - Crypt::SSLeay version 0.51 or later
-
 - LWP::UserAgent version 5.813 or later
-
 - XML::Parser
 
 For IPv6 connections the following are required
 
 - Perl 5.14.2 or later
-
 - LWP::UserAgent version 6.02 or later and relevant dependencies, including LWP::Protocol::https
-
 - Net::INET6Glue
-
 - XML::Parser
 
 to easily install the required libraries it is recommented to use CPAN, after installing perl run
@@ -59,8 +52,7 @@ to easily install the required libraries it is recommented to use CPAN, after in
 and once configured simply run
 
  install LWP::UserAgent
- install XML::Parser
 
 and the other packages you need depending on IPv4 or IPv6 accessibility.
->
+
 
