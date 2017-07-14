@@ -10,7 +10,7 @@ This program is intended to be run from a management workstation and will interf
 
 ## System Requirements
 
-This program depends on the Infoblox AP perl module, which can be downloaded from the appliance. The API documentation is accessible online directly from the appliance. The UF appliance is [here](https://ipam.name.ufl.edu/api/doc/). Past experience indicates that the API may be specific to the version of firmware running on the appliance, so a mismatch in versions may have unintended consequences. This program was originally written for Infoblox API v.6.x and was executed on a Red Hat Enterprise Linux 7.x Workstation.
+This program depends on the Infoblox AP perl module, which can be downloaded from the appliance. The API documentation is accessible online directly from the appliance [here](https://ipam.name.ufl.edu/api/doc/). Past experience indicates that the API may be specific to the version of firmware running on the appliance, so a mismatch in versions may have unintended consequences. This program was originally written for Infoblox API v.6.x and was executed on a Red Hat Enterprise Linux 7.x Workstation.
 
 ### Preparing Your Workstation 
 
@@ -32,27 +32,12 @@ $ cpan
 ```
 
 
-For IPv4 connections the following are required
+then
 
-- Perl 5.8.8 or later
-- Crypt::SSLeay version 0.51 or later
-- LWP::UserAgent version 5.813 or later
-- XML::Parser
-
-For IPv6 connections the following are required
-
-- Perl 5.14.2 or later
-- LWP::UserAgent version 6.02 or later and relevant dependencies, including LWP::Protocol::https
-- Net::INET6Glue
-- XML::Parser
-
-to easily install the required libraries it is recommented to use CPAN, after installing perl run
-
- perl -e shell -MCPAN
-and once configured simply run
-
- install LWP::UserAgent
-
-and the other packages you need depending on IPv4 or IPv6 accessibility.
+```
+> install LWP::UserAgent
+```
 
 
+
+Please refer the the online API documentation for additional information and installation instructions.
